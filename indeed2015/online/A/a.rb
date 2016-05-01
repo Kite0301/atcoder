@@ -1,0 +1,1 @@
+p (gets.size-1)*(gets.size-1)

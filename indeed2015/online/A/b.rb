@@ -1,0 +1,1 @@
+gets.to_i.times{puts gets.chop.split('').sort.join=="ddeeinnow" ?:YES: :NO}

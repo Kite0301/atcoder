@@ -1,0 +1,1 @@
+puts gets.chop.sub("HAGIYA","HAGIXILE")

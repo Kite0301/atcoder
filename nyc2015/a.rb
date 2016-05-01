@@ -1,0 +1,5 @@
+n=gets.to_i.to_s(2)
+puts n==n.reverse ? 'Yes':'No'
+
+# 猿
+s=gets.to_i.to_s 2;puts s.reverse==s ?:Yes: :No

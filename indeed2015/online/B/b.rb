@@ -1,0 +1,1 @@
+s=gets.chop;t=gets.chop;p s.size==t.size ? (s+s).reverse.index(t.reverse)||-1:-1

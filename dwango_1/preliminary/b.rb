@@ -1,0 +1,1 @@
+p gets.chop.gsub('25','A').gsub(/#{(0..9).to_a.join('|')}/,',').split(',').map{|m|n=m.size;n*(n+1)/2}.inject(:+)

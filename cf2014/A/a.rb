@@ -1,0 +1,1 @@
+puts gets.chop+'2014'
