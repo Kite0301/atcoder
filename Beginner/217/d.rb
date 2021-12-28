@@ -1,30 +1,23 @@
 l,q = gets.split.map &:to_i
-a = [0, l]
+$a = [0, l]
 
-def f(n, mi, mx)
-  if (mx - mi).abs <= 1
-    if $a[mi] == n
-      return mi - 1
-    else
-      return mi
-    end
-  end
+def f(x, mi, mx)
+  return [mi, mx] if mx - mi == 1    
 
   h = mi + (mx - mi) / 2
-  if n < $a[h]
-    f(n, mi, h)
+  if x < $a[h]
+    f(x, mi, h)
   else
-    f(n, h, mx)
+    f(x, h, mx)
   end
 end
 
-
 q.times do
-s  c,x = gets.split.map &:to_i
-  b = a.dup
-
-  loop do
-
+  c,x = gets.split.map &:to_i
+  left, right = f(x, 0, $a.size - 1)
+  if c == 1
+    $a.insert(right, x)
+  else
+    p $a[right] - $a[left]
   end
-  b << x
 end
